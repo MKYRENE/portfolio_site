@@ -1,17 +1,4 @@
-/* ========================
-   Reset and Normalize
-   ======================== */
-
-/* CSS reset or normalize.css goes here if used */
-
-
-/* ========================
-   Global Styles
-   ======================== */
-
-/* Body styles and global styles */
-
-/* Set the body and html to take up 100% of viewport height */
+/* RESETS */
 body,
 html {
     height: 100%;
@@ -19,251 +6,175 @@ html {
     padding: 0;
 }
 
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    /* Set the path to your background image */
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url("/css/Images/mountain.jpeg");
-            margin: 0;
-            padding: 0;
-            /* Set background size and position */
-            background-size: cover;
-            background-position: center;
-            /* Optional: Add a background color as fallback */
-            background-color: #f0f0f0;
-            /* Replace with your desired color */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Add global styles for headings, links, etc. */
+
+/* MAIN CONTENT */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the main page link button */
+.main-page-link {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.btn {
+    animation: rainbowAnimation 1.5s infinite;
+}
+
+.btn a {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fa0000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.10s ease;
+}
+
+/* Rainbow animation when hovering over the button link */
+.btn a:hover {
+    background-color: white;
+    animation: rainbowAnimation 1.5s infinite;
+    color: #fff;
+}
+
+/* Keyframes for the rainbow animation */
+@keyframes rainbowAnimation {
+    0% {
+        background-color: red;
     }
 
-    /* Add global styles for headings, links, etc. */
-
-
-    /* ========================
-   Header
-   ======================== */
-
-    /* Styles for the header section */
-
-
-    /* ========================
-   Navigation
-   ======================== */
-
-    /* Styles for the navigation menu or navbar */
-
-
-    /* ========================
-   Main Content
-   ======================== */
-    /* Style for the content wrapper to center the content */
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        /* Use 100vh to make the wrapper take the full viewport height */
+    16.666% {
+        background-color: orange;
     }
 
-    /* Style for the main page link button */
-    .main-page-link {
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
+    33.333% {
+        background-color: yellow;
     }
 
-    .main-page-button {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #007bff;
-        /* Replace with your desired button background color */
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        /* Add smooth transition for hover effect */
+    66.666% {
+        background-color: blue;
     }
 
-    /* Hover effect for the main page link button */
-    .main-page-button:hover {
-        background-color: #0056b3;
-        /* Replace with your desired button background color on hover */
+    83.333% {
+        background-color: indigo;
     }
 
-    /* Styles for the main content section */
-    /* ... Your existing styles ... */
-
-    /* Center the <h1> and <h3> elements */
-    h1,
-    h3 {
-        text-align: center;
-        font-weight: bold;
-        color:white;
-        padding: none;
-        margin:bottom;
+    100% {
+        background-color: violet;
     }
+}
 
-    /* ========================
-   Sidebar
-   ======================== */
-
-    /* Styles for the sidebar, if any */
-
-
-    /* ========================
-   Footer
-   ======================== */
-
-    /* Styles for the footer section */
-    /* Styles for the footer section */
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
-        /* Remove 'position: absolute;' and 'bottom: 0;' to allow content to push footer down */
-        width: 100%;
-        display: flex;
-        /* Add flex display */
-        justify-content: center;
-        /* Center horizontally */
-        align-items: center;
-        /* Center vertically */
-    }
-
-    /* Center the content in the footer */
-    .footer-content {
-        max-width: 1200px;
-        text-align: center;
-    }
-
-    /* Style for footer links */
-    .footer-links {
-        list-style: none;
-        padding: 0;
-    }
-
-    .footer-links li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    .footer-links li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .footer-links li a:hover {
-        text-decoration: underline;
-        color: orange;
-    }
-
-    /* Styles for the social links */
-    .social-links {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .social-links a {
-        display: inline-block;
-        margin: 0 10px;
-        color: white;
-        /* Set the link color to white */
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .social-links a:hover {
-        color: orange;
-        /* Set the link color to orange on hover */
-    }
-
-    /* Add styles for the GitHub and LinkedIn icons
-.social-links i {
+/* Center the <h1> and <h4> elements */
+h1,
+h4 {
+    text-align: center;
+    font-weight: bold;
     color: white;
-} */
+    padding: none;
+    margin: bottom;
+}
 
-    /* Style for footer links */
-    .footer-links li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        /* Add this line to make the text bold */
-    }
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* Style for footer links on hover */
-    .footer-links li a:hover {
-        text-decoration: none;
-        color:orange;
-    }
+.footer-content {
+    max-width: 1200px;
+    text-align: center;
+}
 
-    /* ========================
-   Media Queries
-   ======================== */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
 
-    /* Responsive styles and media queries */
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
 
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    /* ========================
-   Custom Classes and IDs
-   ======================== */
+.footer-links li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
 
-    /* Styles for custom classes and IDs */
-    /* Add a wrapper to center the content */
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+/* FOOTER SOCIAL LINKS */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
-    /* ========================
-   Miscellaneous Styles
-   ======================== */
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    /* Other styles, if needed */
+.social-links a:hover {
+    color: rgb(196, 104, 19);
+}
 
+/* MEDIA QUERIES */
+/* Responsive styles and media queries */
 
-    /* ========================
-   Overrides and Fixes
-   ======================== */
+/* CUSTOM CLASSES AND IDS */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
-    /* Overrides and fixes for specific cases */
+/* MISCELLANEOUS STYLES */
+/* Other styles, if needed */
 
+/* OVERRIDES AND FIXES */
+/* Overrides and fixes for specific cases */
 
-    /* ========================
-   Animations and Transitions
-   ======================== */
+/* ANIMATIONS AND TRANSITIONS */
+/* CSS animations and transitions */
 
-    /* CSS animations and transitions */
+/* PRINT STYLES */
+/* CSS styles for print, if needed */
 
+/* VENDOR PREFIXES */
+/* Styles with vendor prefixes, if necessary */
 
-    /* ========================
-   Print Styles
-   ======================== */
-
-    /* CSS styles for print, if needed */
-
-
-    /* ========================
-   Vendor Prefixes
-   ======================== */
-
-    /* Styles with vendor prefixes, if necessary */
-
-
-    /* ========================
-   Debugging and Development
-   ======================== */
-
-    /* Styles for debugging and development purposes */
-
-
-    /* ========================
-   End of CSS File
-   ======================== */
-
-    /* End of the CSS file comments */
+/* DEBUGGING AND DEVELOPMENT */
+/* Styles for debugging and development purposes */

@@ -14,6 +14,10 @@ const server = express();
 //IMPORTANT MIDDLEWARE NOTE: TO SHARE ANY FILE WITHIN SPECIFIC FOLDER FOR ROUTES
 //GENERATE AUTOMATIC ROUTES TO ANY FILE WITHIN FRONTEND AKA "PUBLIC"
 server.use(express.static('../frontend'))
+//sending express JSON file
+server.use(express.json());
+
+
 
 //LOADING ALL ROUTES >>>>
 server.use('/main', main_routes);
