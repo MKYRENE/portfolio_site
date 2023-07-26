@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>TechFolio: Where Ideas Unite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/jass.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!-- Other meta tags and stylesheets -->
@@ -14,19 +18,43 @@
 <!-- BODY SECTION  -->
 
 <body>
-    <div class="main-page-link">
-        <a href="#" class="main-page-button">Go to Main Page</a>
-    </div>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+               <logo>TechFolio</logo> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-auto"> <!-- Add "mr-auto" class here -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+
+
+    <!-- Main Content -->
     <div class="content-wrapper">
-        <h1 class="text-white">TechFolio: Where Ideas Unite</h1>
-        <h4>"Sculpting Tech Brilliance, Where Ideas Unite!"</h4>
+        <h1 class="text-white">TechFolio</h1>
+        <h3>Where Ideas Unite</h3>
         <button class="btn"><a href="/main">WElCOME</a></button>
     </div>
-   
 
-    <!-- FOOTER SECTION OF THE PAGE  -->
-    <footer>
+    <!-- Bootstrap Footer -->
+    <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2023 Michael Rodriguez TechFolio. All rights reserved.</p>
             <ul class="footer-links">
@@ -44,9 +72,12 @@
                 <i class="fab fa-linkedin"></i>
             </a>
         </div>
-        </div>
-        </div>
     </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

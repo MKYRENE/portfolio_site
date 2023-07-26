@@ -82,9 +82,14 @@ body {
     }
 }
 
+h3 {
+    font-family: 'Indie Flower', cursive;
+}
+
 /* Center the <h1> and <h4> elements */
 h1,
-h4 {
+h3,
+h5 {
     text-align: center;
     font-weight: bold;
     color: white;
