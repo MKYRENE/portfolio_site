@@ -1,0 +1,17 @@
+const router = require('express').Router();
+const path = require('path');
+
+// // GET ROUTE
+// router.get('/', (req, res) => {
+//    res.sendFile(path.join(__dirname, '../../frontend/index.html'));
+// });
+
+// CREATING A GET REQUEST 
+router.get('/', (req, res) => {
+   res.send({
+      message: 'Congratulations! Your Connected ...'
+   });
+});
+
+// EXPORTING ROUTER
+module.exports = router;
